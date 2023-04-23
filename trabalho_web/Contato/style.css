@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+/* font-family: 'Martel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+/* font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* -------------------------------------------------------------------- */
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 88px;
+    margin-top: 39px;
+    justify-content: space-between;
+}
+
+label{
+    margin: 15px;
+}
+
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 32px;
+    margin: -5px;
+}
+
+p{
+    font-family: 'Martel', serif;
+    font-size: 24px;
+    margin: -5px;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+    .comentario_area{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .info{
+        background-color: #ffee0000;
+        background-image: linear-gradient(#ffee0000,#ffee0000, #020D3F , #020D3F);
+        height: 500px;
+
+
+
+    }
+
+
+    .section_texto_comentario{
+        position: static;
+        margin-left: 80px;
+    }
+
+
+    #text_area{
+      position: relative;
+      left: 80px;
+      /* background-color: transparent; */
+      background-color: rgba(255, 255, 255, 0.578);
+
+      
+      border: 1px black solid;
+      border-radius: 8px;
+    }
+
+    #text_area::placeholder {
+      color: black;
+    }
+    .boatao_comentario{
+        position: relative;
+        top: 5px;
+        left: 80px;
+        border-radius: 10px;
+        background-color: #020D3F;
+    }
+
+
+/* -------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------- */
+

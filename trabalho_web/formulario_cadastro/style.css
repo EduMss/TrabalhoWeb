@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+/* font-family: 'Martel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+/* font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* #datePickerId:invalid+span:after,
+.nome_input:invalid+span:after,
+.rg_input:invalid+span:after,
+.cpf_input:invalid+span:after,
+.telefone_input:invalid+span:after,
+.email_input:invalid+span:after,
+.passaporte_input:invalid+span:after,
+.sexo_input:invalid+span:after,
+.senha_input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+#datePickerId:valid+span:after,
+.nome_input:valid+span:after,
+.rg_input:valid+span:after,
+.cpf_input:valid+span:after,
+.telefone_input:valid+span:after,
+.email_input:valid+span:after,
+.passaporte_input:valid+span:after,
+.sexo_input:valid+span:after,
+.senha_input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+} */
+
+
+.layout{
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../Imagens/pagina_cadastro.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.register{
+  width: 450px;
+  height: 550px;
+  background-color: #020D3F;;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.form_register{
+  display: flex;
+  flex-wrap: wrap;
+  height: 440px;
+  width: 450px;
+  align-content: center;
+  margin-left: -22px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.form_register div{
+  background-color: rgb(255 255 255 / 35%);
+  border-radius: 8px;
+  padding: 4px 10px 4px 10px;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+}
+
+input{
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 2px;
+}
+
+input[type=submit]{
+  background-color: rgb(0, 153, 64);
+  border: 1px rgba(0, 0, 0, 0.07) solid;
+  border-radius: 3px;
+  color: white;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.form_register div:last-child{
+  background-color: rgb(255 255 255 / 35%);
+  border-radius: 8px;
+  padding: 8px 10px 8px 10px;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+  display: flex;
+  justify-content: center;
+}
+
+.text_register{
+  margin-left: -130px;
+  font-family: arial;
+  margin-top: -21px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

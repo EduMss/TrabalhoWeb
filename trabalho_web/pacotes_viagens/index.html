@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/0/614.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>    
+    <title>Pacotes de viagens</title>
+
+    <title>Pacotes de Viagens</title>
+</head>
+<body>
+    
+
+    <div class="lugares_area" id="lista_viagem">
+
+        <div class="top-pesquisa">
+    
+            <div class="box_output_resultados">
+                <fieldset class="fieldset_marge_output_resultados">
+                    <output class="output_resultados" id="output_resultados"></output>
+                </fieldset>
+            </div>   
+            
+            <div class="barra_pesquisa">
+                <form  class="form_busca" onclick="Enviar();">
+
+                    <label for="text" class="pesquisa-label">buscar:
+                        <input type="text" class="texto_busca" id="texto_busca">
+                        <input type="button" class="lupa">
+                    </label>
+
+                </form>
+            </div>
+
+            
+
+        </div>
+
+
+        <div class="box" id="box">
+        </div>
+
+        <div class="espace"><p> </p></div>
+
+    </div>
+
+
+    <script src="./script_viagens.js"></script>
+</body>
+</html>

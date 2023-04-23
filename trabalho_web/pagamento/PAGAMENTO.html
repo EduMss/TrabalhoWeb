@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <!--custon css file link-->
+    <link rel="stylesheet" href="ESTILIZACAOPAGAMENTO.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/0/614.png" type="image/x-icon">
+    <title>Pagamento</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form method="POST" action="../pagamento/processar_pagamento.php" onsubmit="return processar_pagamento();">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Compra de pasagens Aéreas</h3>
+
+
+                    <div class="inpuntBox">
+                        <b><span>Cartões Aceitos:</span> </b>
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inpuntBox">
+                        <b> <span>Rg</span></b>
+                        <input type="number" class="Passageiro_RG" name="Passageiro_RG" placeholder="RG" disabled> 
+                    </div>
+                    <div class="inpuntBox">
+                        <b> <span>Nome impresso no cartão</span></b>
+                        <input type="text" class="nome_cartao" name="nome_cartao" placeholder="Nome impresso" required>
+                    </div>
+                    <div class="inpuntBox">
+                        <b> <span>Número do Cartão de crédito</span> </b>
+                        <input type="number" class="numero_cartao" name="numero_cartao" placeholder="0000.0000.0000.0000" required>
+                    </div>
+                    <div class="inpuntBox">
+                        <b> <span>CVV</span> </b>
+                        <input type="number" class="codigo" name="codigo" placeholder="000" required>
+                    </div>
+                    <div class="inpuntBox">
+                        <div class="selection">
+                            <div class="date">
+                                <b><span> Validade </span></b>
+                                <br><select class="mes" name="mes" id="mes" required>
+                                    <option value="" name="mes">Mês</option>
+                                    <option value="01" name="mes">Janeiro</option>
+                                    <option value="02" name="mes" >Fevereiro</option>
+                                    <option value="03" name="mes" >Março</option>
+                                    <option value="04" name="mes" >Abril</option>
+                                    <option value="05" name="mes" >Maio</option>
+                                    <option value="06" name="mes" >Junho</option>
+                                    <option value="07" name="mes" >Julho</option>
+                                    <option value="08" name="mes" >Agosto</option>
+                                    <option value="09" name="mes" >Setembro</option>
+                                    <option value="10" name="mes" >Outubro</option>
+                                    <option value="11" name="mes" >Novembro</option>
+                                    <option value="12" name="mes" >Desembro</option>
+                                </select>
+                                <select class="Anos" name="Anos" id="Anos" required>
+                                    <option value="" name="Anos">Ano</option>
+                                    <option value="2025" name="Anos">2025</option>
+                                    <option value="2024" name="Anos">2024</option>
+                                    <option value="2023" name="Anos">2023</option>
+                                    <option value="2022" name="Anos">2022</option>
+                                    <option value="2021" name="Anos">2021</option>
+                                </select>
+                            </div>
+                        </div><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Confirme seu Pagamento" class="submit-btn">
+        </form>
+    </div>
+
+
+
+    <script src="./script_pagamento.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../formulario_login/style.css" type="text/css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/0/614.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>    
+    <title>Login</title>
+</head>
+<body>
+
+
+    <div class="layout">
+        <div class="login">
+            <div class="text_login">
+                <h1>Login</h1>
+            </div>
+            <form  class="form_login" method="POST" action="../formulario_login/validacao_login.php">
+                
+                <div>
+                    <label for="nome">E-mail:</label>
+                    <input type="email" class="email_input" name="email_cliente" required>
+                    <span class="validity"></span>
+                </div>
+
+                <div>
+                    <label for="nome">Senha:</label>
+                    <input type="password" class="senha_input" name="senha" required maxlength="13"> 
+                    <span class="validity"></span>
+                </div>
+                
+                <div>
+                    <input type="submit" value="Login"> 
+                </div>
+            </form>
+
+            
+        </div>
+    </div>
+
+
+
+    <script src="../formulario_login/script_login.js"></script>
+</body>
+</html>

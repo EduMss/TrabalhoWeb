@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/0/614.png" type="image/x-icon">
+    <title>Reservas de passagens</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<div>
+    <aside class="busca">
+<div>
+        <p><h2>Passagens</h2></p>
+    <label>
+        <input type="radio" name = "opcao" value = "op1"> Ida e Volta
+        <input type="radio" name = "opcao" valeu = "op2"> Somente ida
+    </label>
+        
+        <div class="destino">
+        <p>Origem <input type="text" placeholder="Digite uma cidade"></p>
+        <p>Destino <input type="text" placeholder="Digite uma cidade"></p>
+
+        <div class="datas">
+        <p>Datas</p>
+
+        <!-- esse this.checked no checkbox retorna o valor true ou false -->
+        <p><input type="checkbox" onclick="desabilitar(this.checked)"/> Sem data</p>
+
+         <!-- tem que colocar esses ids(no caso pode ser o nome que voce preferir) para pode desabilitar e habilitar o input desejado -->
+         <p>Ida <input type="date" id="data_ida" placeholder="ida" required /></p>
+         <p>Volta <input type="date" id="data_volta" placeholder="volta" required /></p>
+
+        <p>Adultos <input type="number" id="adultos" min="1" max="9" step="1" value="1"></p>
+        <p>Menores <input type="number" id= "menores" min="1" max="9" step="1" value="1"></p>
+
+        <label for="classe">Classe
+            <select name="classe" id="classe">
+                <option value="economica">Economica</option>
+                <option value="premium">Premium</option>
+                <option value="executiva">Executiva</option>
+                <option value="primeira">Primeira</option>
+            </select>
+            </label>
+            <br><br>
+            <label for="destino">Destino
+                <select name="destino" id="destino">
+                    <option value="Brasília">Brasília</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Foz do Iguaçu">Foz do Iguaçu</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceara">Ceara</option>
+                    <option value="Rio Grande Do Sul">Rio Grande Do Sul</option>
+                    <option value="Goiás">Goiás</option>
+                </select>
+            </label><br><br>
+            <p><button>Pesquisar</button></p>
+
+    </div>
+</div>
+    <script src="./script_pr.js"></script> 
+</div>
+</aside>
+<main class="passagens">
+<label>
+    <div class="SP">
+    <h2>São Paulo</h2>
+    <p>Data: 09/11/2022</p>
+    <p>Preço: </p>
+    <div class="hora">
+    <p>Hora de saída: 15:00h <img src="istockphoto-1201254642-170667a.jpg" alt="avião" width=250 height=150> Hora de chegada: 16:00h</p>
+    <button onclick="Pagina_compra()">Comprar</button>
+    </div>
+    </div>
+</label><br><br>
+
+<label>
+    <div class="RJ">
+    <h2>Rio de Janeiro</h2>
+    <p>Data: 09/11/2022</p>
+    <p>Preço: </p>
+    <div class="hora">
+    <p>Hora de saída: 09:00h <img src="istockphoto-1201254642-170667a.jpg" alt="avião" width=250 height=150> Hora de chegada: 11:00h</p>
+    <button onclick="Pagina_compra()">Comprar</button>
+    </div>
+    </div>
+</label><br><br>
+
+<label>
+    <div class="DF">
+    <h2>Brasília</h2>
+    <p>Data: 09/11/2022</p>
+    <p>Preço: </p>
+    <div class="hora">
+    <p>Hora de saída: 17:00h <img src="istockphoto-1201254642-170667a.jpg" alt="avião" width=250 height=150> Hora de chegada: 16:40h</p>
+    <button onclick="Pagina_compra()">Comprar</button>
+    </div>
+    </div>
+</label><br><br>
+
+<label>
+    <div class="BA">
+    <h2>Bahia</h2>
+    <p>Data: 09/11/2022</p>
+    <p>Preço: </p>
+    <div class="hora">
+    <p>Hora de saída: 07:00h <img src="istockphoto-1201254642-170667a.jpg" alt="avião" width=250 height=150> Hora de chegada: 08:30h</p>
+    <button onclick="Pagina_compra()">Comprar</button>
+    </div>
+    </div>
+</label>
+
+</main>
+   
+</body>
+</html>

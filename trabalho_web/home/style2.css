@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+
+@keyframes nuvens-esquerda_para_direita{
+    from {
+      transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-600px);
+    }
+  }
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+.mid{
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    /* width: 100vw; */
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    .imagem-1{
+        /* background-image: url("https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/assets.newatlas.com_.jpg?w=876&h=484&crop=1"); */
+        
+        /* width: 876px;
+        height: 342px;
+        background-position-y: -70px;
+        border-radius: 0px 0px 35px 35px; */
+
+        /* background-image: url("https://s1.1zoom.me/big0/883/Passenger_Airplanes_Flight_Clouds_Front_552808_1280x853.jpg"); */
+
+        background-image: url("../Imagens/Airplanes.jpg");
+
+        width: 1400px;
+        background-size: 1400px 840px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        background-position-y: -306px;
+        border-radius: 0px 0px 35px 35px;
+        box-shadow: 0px 7px 18px 1px #50608bad;;
+
+    }
+
+    .objetivos{
+        margin: 65px;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #020D3F;
+        border: 2px #00000017 solid;
+
+        display: grid;
+        grid-template-columns: auto auto;
+    
+    }
+
+
+        .text_objetivos{
+            display: flex;
+            flex-direction: column;
+            font-family: 'Martel', serif;
+            color: white;
+        }
+
+        .imagem-2{
+            background-image: url(../Imagens/aviao-decolando-do-aeroporto.png);
+            width: 444px;
+            background-size: 560px 464px;
+            background-position: center;
+            height: 340px;
+            border-radius: 40px;
+            box-shadow: -4px 6px 5px 4px #50608bad;
+            background-position-y: -29px;
+            background-position-x: -9px;
+            opacity: 0.85;
+            margin: 15px;
+
+            border: 2px #00000017 solid;
+
+        }
+
+
+.lugares_area{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;;
+}
+
+    .top-pesquisa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #020D3F;
+
+        padding: 0px 25px;
+    }
+
+        .pesquisa-label{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            align-content: center;
+            margin: 8px;
+        }
+
+        label {
+            margin-left: 20px;
+            font-family: Times, sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+
+        .lupa {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png);
+            filter: invert(100%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 25px;
+            border: 0;
+            margin: 8px;
+            color: white;
+        }
+
+        .lupa:hover{
+            background-color: rgba(0, 0, 0, 0.072);
+        }
+
+    /* resultado de quantas buscas teve */
+
+        .fieldset_marge_output_resultados{
+            background-color: rgba(0, 0, 0, 0.137);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0));
+
+            padding: relative;
+
+            border: 2px #00000036 solid;
+            border-radius: 10px;
+        }
+
+            .output_resultados{
+                color: white;
+            }
+
+  /* box onde vai ficar todos os itens(locais) */
+    .box{
+        align-items: center;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+
+        background-color: #020D3F;
+        /* margin: 0px 50px; */
+
+        margin: 0px 150px;
+        padding: 80px 0px;
+
+        border-radius: 40px;
+        border: 2px #00000017 solid;
+    }
+
+        .inicio{
+            display: flex;
+        }
+
+        /* div que e criada com 3 locais, serve para deixar 3 locais na horizontal */
+            .item{
+                margin-top: 50px;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: auto auto auto;
+            }
+
+                .links{
+                    margin: 25px 30px 25px 30px;
+                    font-family: 'Noto Sans', sans-serif;
+                }
+
+            /* linha de quando o mouse fica em cima do link/text */
+                .links:link {
+                    color: rgba(0, 0, 0, 0);
+                }
+
+                .links:hover{
+                    color: rgb(0, 0, 0);
+                }
+
+            /* box com borda onde fica o nome e preço do local */
+                .item-cada-lugar{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    background-color: white;
+                    border-radius: 20px;
+
+                    box-shadow: 0px 5px 12px 0px #50608bad;;
+
+                    width: 400px;
+                    
+                }
+                /* Imagem do lugar, mas esse e o padão*/
+                    .imagem-viagem{
+                        width: 100px;
+                        height: 100px;
+                        background-size: 120px 120px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 16px 0px 0px 16px;
+                        transition: background-size .5s ease-in-out;
+                    } 
+                    
+                    .imagem-viagem:hover{
+                        /* animation: zoom_image 500ms forwards; */
+                        background-size: 100px 100px;
+                    }
+
+
+                    /* Letras / preços */
+                    .h3_info{
+                        margin-left: 5px;
+                        color: black;
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .h5_info, .h4_info{
+                        margin-left: 17px;
+                        color: black;
+                        margin-right: 20px;
+                        margin-top: 19px;
+                        font-size: 11px;
+                    }
+
+    .espaçamento{
+        height: 165px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .vermais{
+        background-color: #020D3F; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+        height: 100px;
+        width: 350px;
+        border-radius: 25px;
+    }
+
+.foother{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95vh;
+}
+
+    .espaçamento-1{
+        height: 100px;
+    }
+
+    .umpoucosobrenos{
+        margin: 65px;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #020D3F;
+        border: 2px #00000017 solid;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+        .text_umpoucosobrenos{
+            margin: 50px;
+            font-family: 'Martel', serif;
+            color: white;
+            
+        }
+
+        .imagem-3{
+            background-image: url(../Imagens/aviao-voando.jpeg);
+            width: 444px;
+            background-size: 560px 464px;
+            background-position: center;
+            height: 340px;
+            border-radius: 40px;
+            box-shadow: -4px 6px 5px 4px #50608bad;
+            background-position-y: -29px;
+            background-position-x: -9px;
+            opacity: 0.85;
+            margin: 30px;
+
+            border: 2px #00000017 solid;
+
+        }
+
+    .info{
+        background-color: white;;
+        background-image: linear-gradient(#ffee0000, #020D3F , #020D3F);
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+
+    }
+
+        .caramelos{
+            position: relative;
+            left: 7px;
+            bottom: -9px;
+        }

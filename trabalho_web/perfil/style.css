@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel&display=swap');
+/* font-family: 'Martel', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+/* font-family: 'Cormorant Garamond', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+.layout{
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../Imagens/pagina_cadastro.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+.perfil{
+  width: 450px;
+  height: 640px;
+  background-color: #020D3F;;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.perfil_nome{
+  font-size: 10px;
+  margin-top: -25px;
+}
+
+.form_perfil{
+  display: flex;
+  flex-wrap: wrap;
+  height: 440px;
+  width: 450px;
+  align-content: center;
+  margin-left: -22px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.form_delete_perfil{
+  display: flex;
+  flex-wrap: wrap;
+  height: 20px;
+  width: 450px;
+  align-content: center;
+  margin-left: -22px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.form_perfil div, .form_delete_perfil div{
+  background-color: rgb(255 255 255 / 35%);
+  border-radius: 8px;
+  padding: 4px 10px 4px 10px;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+}
+
+input{
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 2px;
+}
+
+.form_perfil input[type=submit]{
+  background-color: rgb(0, 153, 64);
+  border: 1px rgba(0, 0, 0, 0.07) solid;
+  border-radius: 3px;
+  color: white;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.form_delete_perfil input[type=submit]{
+  background-color: rgb(153, 0, 0);
+  border: 1px rgba(0, 0, 0, 0.07) solid;
+  border-radius: 3px;
+  color: white;
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.form_perfil div:last-child{
+  background-color: rgb(255 255 255 / 35%);
+  border-radius: 8px;
+  padding: 8px 10px 8px 10px;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+  display: flex;
+  justify-content: center;
+}
+
+.form_delete_perfil:last-child{
+  /* background-color: rgb(255 255 255 / 35%); */
+  border-radius: 8px;
+  padding: 8px 50px 8px 10px;
+  border: 1px rgba(0, 0, 0, 0.034) solid;
+  display: flex;
+  justify-content: center;
+}
+
+.text_perfil{
+  margin-left: -200px;
+  font-family: arial;
+  margin-top: -21px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
